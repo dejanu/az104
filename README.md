@@ -3,7 +3,8 @@
 
 * A personal access token (PAT) is used to connect a self-hosted agent to **Azure Pipelines**.
 * Lifespan can be used to define the maximum lifespan of a PAT and control its lifecycle: implement policies that control the number of days that personal access tokens (PAT) are available.
-* Caching is available YAML and classic build pipelines. It is not available in classic release pipelines.
+* **Caching** is available YAML and classic build pipelines. It is not available in classic release pipelines.
+* **Task groups**  are available only in classic build and classic release pipelines. 
 
 ---
 
@@ -47,3 +48,11 @@ az keyvault secret set \
 * Application Map lists the components of an app, including key metrics and alerts, but it does not provide direct access to aggregated data.
 * Profiler allows you to inspect execution profiles of sampled requests
 * Usage analysis allows you to analyze user segmentation and retention.
+
+---
+
+* **Semantic versioning**  has the form of `Major.Minor.Patch` corresponds to the three types of changes covered in the previous section.
+  > Examples of versions using the semantic versioning scheme are `1.0.0` and `3.7.129`. These versions don't have any **labels**.
+* The **major** element represents the version of content that has changed significantly, which results in some degree of incompatibility with the previous major version.
+* The **minor** element represents the version of content that has been changed but not as significantly as the major version, making it more likely to be compatible with the previous minor version
+*  The **patch** element represents a fix that preserves backward compatibility and can represent prereleases, such as alpha/beta.
