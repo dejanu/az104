@@ -78,6 +78,7 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 ```
 
 * **Application security groups** allow you to group together the network interfaces from multiple VMs, and then use the group as the source or destination in an NSG rule.
+* You can connect virtual networks to each other with **virtual network peering**
 
 ---
 
