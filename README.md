@@ -3,24 +3,6 @@
 Azure admin concepts: Virtual networks, Storage, Compute, Identity, Security, Governance
 
 
-## Scenarios:
-
-* Assign licenses to users based on Azure AD attributes actions:
-  - You must create a dynamic security group
-  - The dynamic group must be added to a license group for automatic synchronization
-
-* Which of the following situations would be good example of when to use a resource lock?
-  - An ExpressRoute Circuit is a critical resources Resource locks prevent other users in the organization from accidentally deleting or modifying critical resources.
-
-* user principal name (UPN) = for guest users UPM will contain the email of the guest user (bsmith_contoso.com) followed by #EXT# followed by the domain name of the tenant (@fabrikam.com):
-`UserPrincipalName: bsmith_contoso.com#EXT#@fabrikam.com`
-
-* Name 3 resource types can you apply delete locks: virtual machines, subscriptions, and resource groups. You cannot use delete locks on management groups or storage account data.
-
-* Invite external users for B2B collaboration: External collaboration settings
-* Block access to resources from unknown locations: Conditional Access
-* You can assign a network security group (NSG) to the subnet of the virtual network in the SAME region.
-
 ## Concepts:
 
 * Azure Resource Manager (ARM) provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs.
@@ -51,7 +33,7 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 
 * **Azure Subscriptions** - authenticates and authorizes user to use resources, and a subscription is linked to an Azure account, which in turn is an identity in Azure Active Directory (AD)
 
-*  **Resource Manager locks** allow organizations to put a structure in place that prevents the accidental deletion of resources in Azure.
+* **Resource Manager locks** allow organizations to put a structure in place that prevents the accidental deletion of resources in Azure.
    - You can associate the lock with a subscription, resource group, or resource and locks are inherited by child resources
    - There are 2 types of Locks:
      - **Read-Only locks** which prevent any changes to the resource
@@ -59,14 +41,40 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 
 * Azure role-based access control (RBAC):
   - Azure **AD roles** provide the mechanism for managing permissions to **AD resources** (e.g. user accounts and passwords)
+---
+
+* Azure Active Directory (AD):  cloud-based identity and access management service
+  - Azure AD provides secure single sign-on (SSO)
+  - Identity (users or apps)
+  - Account (identity that has data associated with it)
+  - Azure AD Account (n Azure AD account is an identity that's created through Azure AD or another Microsoft cloud service)
+  - Azure tenant:  single dedicated and trusted instance of Azure AD. Each tenant (also called a directory) represents a single organization.
+  
+* Azure AD supports three types of user accounts: Cloud identity (defined only in Azure AD),Directory-synchronized identity (defined in an on-premises Active Directory-synchronization activity occurs via Azure AD Connect to bring these user accounts in to Azure, Guest user (acounts outside of Azure)
+
+* Active Directory Domain Services (AD DS) is the traditional deployment of Windows Server-based Active Directory on a physical or virtual server.
+
+* AD DS is primarily a directory service, while Azure AD is a full identity solution(is based on HTTP and HTTPS, it doesn't use Kerberos authentication.)
+
+* What term defines a dedicated and trusted instance of Azure Active Directory? - **Azure AD tenant**
+
+* Which choice correctly describes Azure Active Directory? - Azure AD is primarily an identity solution. It's designed for internet-based applications by using HTTP and HTTPS communications.
  
- * A **custom role definition** includes the operations allowed such as read, write, and delete for Azure resources, and the scope of those permissions
+* A **custom role definition** includes the operations allowed such as read, write, and delete for Azure resources, and the scope of those permissions
 
 * Roles:
   - Reader: view all the resources but does not allow you to make any changes
   - Contributor: allows you to manage all the resource
   - Billing reader: read access only to billing data 
   - Tag Contributor: manage entity tags without providing access to the entities themselves
+
+---
+
+* Azure virtual network: logical isolation of the Azure cloud that's dedicated to your subscription.
+  - User virtual networks to provision and manage virtual private networks (VPNs) in Azure.
+  - Each virtual network has its own **Classless Inter-Domain Routing (CIDR)** block and can be LINKED to other virtual networks and on-premises networks.
+  - Link Virtual Networks when the CIDR blocks of the connecting networks don't overlap.
+
 
 * Ports:
 ```bash
