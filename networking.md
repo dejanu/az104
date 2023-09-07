@@ -5,7 +5,7 @@
 
 
 * Azure virtual network  (VNet): logical isolation of the Azure cloud that's dedicated to your subscription.
-  - User virtual networks to provision and manage virtual private networks (VPNs) in Azure.
+  - Use virtual networks to provision and manage virtual private networks (VPNs) in Azure.
   - Each virtual network has its own **Classless Inter-Domain Routing (CIDR)** block and can be LINKED to other virtual networks and on-premises networks.
   - Link Virtual Networks when the CIDR blocks of the connecting networks don't overlap.
   - You can segment a VNet into multiple subnets
@@ -13,12 +13,14 @@
 
 ![virtual networks](https://github.com/dejanu/az104/blob/main/src/virtual_networks.png)
 
-*  Azure VNets connect Azure resources  (virtual machines, the Azure App Service Environment, Azure Kubernetes Service (AKS), and Azure Virtual Machine Scale Sets). You can use **service endpoints** to connect to other Azure resource types, such as Azure SQL databases and storage accounts
+*  Azure VNets connect Azure resources  (virtual machines, the Azure App Service Environment, Azure Kubernetes Service (AKS), and Azure Virtual Machine Scale Sets). You can use **service endpoints** to connect to other Azure resource types, such as Azure SQL databases and storage accounts.
+
 * Private endpoints: offer security access between Azure PaaS Services such as Storage, CosmosDB, SQL Database, and Azure-hosted services such as Virtual Machine on Azure backbone network.
 
-* Secure communication and control access WITHIN a virtual network, you can use [network security groups (NSG)](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-overview) and network security group rules.
+* To filter network traffic to and from Azure resources that are attached to a VNet [network security groups (NSG)](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-overview) and network security group rules.
 
 * Network security groups contain security rules that filter network traffic by: IP address, Port, and Protocol
+
 * You can assign a network security group to a SUBNET or a NETWORK INTERFACE, and define security rules in the group to control network traffic.
     - Security rules in network security groups enable you to filter network traffic
     - Azure creates default security rules for traffic:  `DenyAllInbound` traffic and `AllowInternetOutbound` traffic. By default, inbound security rules allow traffic from any virtual machine to any other virtual machine WITHIN the virtual network
