@@ -1,9 +1,13 @@
 # Networking
 
+
+![Region aozne](https://github.com/dejanu/az104/blob/main/src/regions_zone.PNG)
+
 * Azure virtual network  (VNet): logical isolation of the Azure cloud that's dedicated to your subscription.
   - User virtual networks to provision and manage virtual private networks (VPNs) in Azure.
   - Each virtual network has its own **Classless Inter-Domain Routing (CIDR)** block and can be LINKED to other virtual networks and on-premises networks.
   - Link Virtual Networks when the CIDR blocks of the connecting networks don't overlap.
+  - You can segment a VNet into multiple subnets
   - **Subnets** provide a way for you to implement logical divisions within your virtual network. The IP address space for a subnet must be specified by using CIDR notation
 
 ![virtual networks](https://github.com/dejanu/az104/blob/main/src/virtual_networks.png)
@@ -11,9 +15,22 @@
 *  Azure VNets connect Azure resources  (virtual machines, the Azure App Service Environment, Azure Kubernetes Service (AKS), and Azure Virtual Machine Scale Sets). You can use **service endpoints** to connect to other Azure resource types, such as Azure SQL databases and storage accounts
 
 * Secure communication and control access WITHIN a virtual network, you can use network security groups (NSG) and network security group rules.
-* You can assign a network security group to a SUBNET or a NETWORK INTERFACE
+* You can assign a network security group to a SUBNET or a NETWORK INTERFACE, and define security rules in the group to control network traffic.
+    - Security rules in network security groups enable you to filter network traffic
+    - Azure creates default security rules for traffic:  `DenyAllInbound` traffic and `AllowInternetOutbound`` traffic.
+    - You can't remove the default security rules.
+    - You can override a default security rule by creating another security rule that has a higher Priority setting for your network security group.
+
+
+-> For INBOUND traffic, Azure first processes network security group security rules for any associated subnets and then any associated network interfaces.
+
+
+<- For OUTBOUND traffic, the process is reversed. Azure first evaluates network security group security rules for any associated network interfaces followed by any associated subnets.
+
+
 
 * DMZ (demilitarized zone) = subnet with a network security group
+
 * Ports:
 ```bash
  port 443 to secured HTTPS traffic, 
