@@ -78,3 +78,8 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 * The **major** element represents the version of content that has changed significantly, which results in some degree of incompatibility with the previous major version.
 * The **minor** element represents the version of content that has been changed but not as significantly as the major version, making it more likely to be compatible with the previous minor version
 *  The **patch** element represents a fix that preserves backward compatibility and can represent prereleases, such as alpha/beta.
+
+### Links:
+
+- https://www.itexams.com/exam/AZ-104
+- https://learn.microsoft.com/en-us/training/paths/az-104-manage-virtual-networks/
