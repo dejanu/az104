@@ -17,3 +17,7 @@
 * You can assign a network security group (NSG) to the subnet of the virtual network in the SAME region.
 
 * Your users want to sign-in to devices, apps, and services from anywhere. Users want to sign-in by using an organizational work or school account instead of a personal account. What should you do first?: Joining the devices to Azure Ad provides the features you need.
+
+
+* What feature can support the denial of traffic based on the IP address range?
+  - statically assigned IP addresses to avoid having to change the firewall rules.
