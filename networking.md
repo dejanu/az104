@@ -7,6 +7,7 @@
   - **Subnets** provide a way for you to implement logical divisions within your virtual network.
 
 
+
 * Ports:
 ```bash
  port 443 to secured HTTPS traffic, 
@@ -18,3 +19,5 @@
 
 * **Application security groups** allow you to group together the network interfaces from multiple VMs, and then use the group as the source or destination in an NSG rule.
 * You can connect virtual networks to each other with **virtual network peering**
+
+![virtual networks](https://github.com/dejanu/az104/blob/main/src/virtual_networks.png)
