@@ -9,11 +9,13 @@
   - Each virtual network has its own **Classless Inter-Domain Routing (CIDR)** block and can be LINKED to other virtual networks and on-premises networks.
   - Link Virtual Networks when the CIDR blocks of the connecting networks don't overlap.
   - You can segment a VNet into multiple subnets
-  - **Subnets** provide a way for you to implement logical divisions within your virtual network. The IP address space for a subnet must be specified by using CIDR notation
+  - **Subnets** provide a way for you to implement logical divisions within your virtual network. The IP address space for a subnet must be specified by using CIDR notation. For each subnet, Azure reserves five IP addresses (first four last addresses, and last address)
+
+
 
 ![virtual networks](https://github.com/dejanu/az104/blob/main/src/virtual_networks.png)
 
-*  Azure VNets connect Azure resources  (virtual machines, the Azure App Service Environment, Azure Kubernetes Service (AKS), and Azure Virtual Machine Scale Sets). You can use **service endpoints** to connect to other Azure resource types, such as Azure SQL databases and storage accounts.
+*  Azure VNets connect Azure resources (virtual machines, the Azure App Service Environment, AKS, and Azure Virtual Machine Scale Sets). You can use **service endpoints** to connect to other Azure resource types, such as Azure SQL databases and storage accounts.
 
 * Private endpoints: offer security access between Azure PaaS Services such as Storage, CosmosDB, SQL Database, and Azure-hosted services such as Virtual Machine on Azure backbone network.
 
@@ -28,16 +30,12 @@
     - You can override a default security rule by creating another security rule that has a higher Priority setting for your network security group.
 
 * Rules priority:
-  - Priority = a number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority. Once traffic matches a rule, processing stops. ` 100 DENY all` doesn't matter what's after.
+  - Priority = a number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority. Once traffic matches a rule, processing stops. `100 DENY all` doesn't matter what's after.
   - E.g. : The rule with priority 150 is processed before the rule with priority 200.
 
 
--> For INBOUND traffic, Azure first processes network security group security rules for any associated subnets and then any associated network interfaces.
-
-
-<- For OUTBOUND traffic, the process is reversed. Azure first evaluates network security group security rules for any associated network interfaces followed by any associated subnets.
-
-
+-> For INBOUND traffic, Azure first processes network security group security rules for any associated subnets and then any associated network interfaces ( SUBNETS-->NIC)
+<- For OUTBOUND traffic, the process is reversed. Azure first evaluates network security group security rules for any associated network interfaces followed by any associated subnets (NIC-->SUBNET)
 
 * DMZ (demilitarized zone) = subnet with a network security group
 
@@ -58,5 +56,5 @@
 
 ![peering](https://github.com/dejanu/az104/blob/main/src/vnet_peering.png)
 
-
+* Azure Virtual Network peering lets you connect virtual networks in the same or different regions, so resources in both networks can communicate with each other.
 * When virtual networks are peered, you can configure Azure VPN Gateway in the peered virtual network as a transit point. A virtual network can have only one VPN gateway
