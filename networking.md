@@ -42,7 +42,8 @@
 * Ports:
 
 ```bash
- port 443 # to secured HTTPS traffic, 
+ port 443 # to secure HTTPS traffic,
+ port 445 # file share
  port 3389 # for Remote Desktop,  
  port 587 # to send outbound email by using authenticated SMTP relay. 
  port 80 # is used for unsecured traffic. 
