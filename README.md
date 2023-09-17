@@ -33,6 +33,14 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 
 * **Azure Subscriptions** - authenticates and authorizes user to use resources, and a subscription is linked to an Azure account, which in turn is an identity in Azure Active Directory (AD)
 
+* **Azure Network Watcher** - provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources on an Azure virtual network
+
+* **Azure Resource Manager** - is the deployment and management service for Azure. Network security groups (NSGs) are used only for security, not monitoring
+
+* **Azure Monitor** - is used for the HTTP Data Collector API to send log data to Log Analytics.
+
+* **Advisor** - helps you optimize and reduce your overall Azure spend by identifying idle and underutilized resources
+
 * **Resource Manager locks** allow organizations to put a structure in place that prevents the accidental deletion of resources in Azure.
    - You can associate the lock with a subscription, resource group, or resource and locks are inherited by child resources
    - There are 2 types of Locks:
@@ -68,8 +76,14 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
   - Billing reader: read access only to billing data 
   - Tag Contributor: manage entity tags without providing access to the entities themselves
 
+
+
 ---
 
+* Tags are metadata elements that can be applied to Azure resources (can be used for tracking VMs and associating each resource to a department for billing and reporting purposes)
+* Administrative units are containers used for delegating administrative roles to manage a specific portion of Azure AD
+* Management groups are containers that can be used to manage access, policy, and compliance across multiple Azure subscriptions.
+* Azure Storage accounts contain Azure Storage data objects, including blobs, file shares, queues, tables, and disks
 
 ---
 

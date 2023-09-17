@@ -42,12 +42,13 @@
 * Ports:
 
 ```bash
- port 443 # to secure HTTPS traffic,
+ port 443 # to secure HTTPS traffic
  port 445 # file share
- port 3389 # for Remote Desktop,  
- port 587 # to send outbound email by using authenticated SMTP relay. 
- port 80 # is used for unsecured traffic. 
+ port 3389 # for Remote Desktop 
+ port 587 # to send outbound email by using authenticated SMTP relay
  port 25 # is used by mail traffic
+ port 80 # is used for unsecured traffic
+ port 5671 # is used to send health information to Azure AD
 ```
 
 * **Application security groups** allow you to group together the network interfaces from multiple VMs, and then use the group as the source or destination in an NSG rule.
