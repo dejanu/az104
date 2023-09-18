@@ -12,8 +12,7 @@
 
 * Name 3 resource types can you apply delete locks: virtual machines, subscriptions, and resource groups. You cannot use delete locks on management groups or storage account data.
 
-* receive the following error message: `Unable to invite user user1@outlook.com `" Generic authorization exception:
-  - From the Users settings blade, modify the External collaboration setting. Invite external users for B2B collaboration: External collaboration settings
+
 * Block access to resources from unknown locations: Conditional Access
 * You can assign a network security group (NSG) to the subnet of the virtual network in the SAME region.
 

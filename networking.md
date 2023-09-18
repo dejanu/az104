@@ -4,20 +4,27 @@
 ![Region aozne](https://github.com/dejanu/az104/blob/main/src/regions_zone.PNG)
 
 
-* Azure virtual network  (VNet): logical isolation of the Azure cloud that's dedicated to your subscription.
+* Azure virtual network (VNet): logical isolation of the Azure cloud that's dedicated to your subscription.
   - Use virtual networks to provision and manage virtual private networks (VPNs) in Azure.
-  - Each virtual network has its own **Classless Inter-Domain Routing (CIDR)** block and can be LINKED to other virtual networks and on-premises networks.
-  - Link Virtual Networks when the CIDR blocks of the connecting networks don't overlap.
+  - Each virtual network has its own **Classless Inter-Domain Routing (CIDR)** block and can be LINKED to other virtual networks and on-premises networks. Link Virtual Networks when the CIDR blocks of the connecting networks don't overlap.
   - You can segment a VNet into multiple subnets
-  - **Subnets** provide a way for you to implement logical divisions within your virtual network. The IP address space for a subnet must be specified by using CIDR notation. For each subnet, Azure reserves five IP addresses (first four last addresses, and last address)
 
+* **Subnets** provide a way for you to implement logical divisions within your virtual network. The IP address space for a subnet must be specified by using CIDR notation. 
+  - A subnet is a range of IP addresses in the virtual network.
+  - For each subnet, Azure reserves five IP addresses (first four last addresses, and last address)
+  - Traffic routed to the `none` next hop type is dropped and not routed outside the subnet.
+  - Valid next hop choices are: `virtual appliance, virtual network gateway, virtual network, internet, and none`
 
+* **Network Interface** is the interconnection between a VM and a VNet.
+  - Multiple NICs allow a VM to connect to different subnets
 
 ![virtual networks](https://github.com/dejanu/az104/blob/main/src/virtual_networks.png)
 
 *  Azure VNets connect Azure resources (virtual machines, the Azure App Service Environment, AKS, and Azure Virtual Machine Scale Sets). You can use **service endpoints** to connect to other Azure resource types, such as Azure SQL databases and storage accounts.
 
 * Private endpoints: offer security access between Azure PaaS Services such as Storage, CosmosDB, SQL Database, and Azure-hosted services such as Virtual Machine on Azure backbone network.
+
+* Virtual network endpoints extend the private address space in Azure
 
 * To filter network traffic to and from Azure resources that are attached to a VNet [network security groups (NSG)](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-overview) and network security group rules.
 
@@ -42,16 +49,16 @@
 * Ports:
 
 ```bash
- port 443 # to secure HTTPS traffic
+ port 443 # to secure HTTPS traffic e.g sync with Azure AD
  port 445 # file share
  port 3389 # for Remote Desktop 
  port 587 # to send outbound email by using authenticated SMTP relay
  port 25 # is used by mail traffic
- port 80 # is used for unsecured traffic
+ port 80 # is used for unsecured traffic, e.g download CRL (cert revocation list) to verify SSL certs
  port 5671 # is used to send health information to Azure AD
 ```
 
-* **Application security groups** allow you to group together the network interfaces from multiple VMs, and then use the group as the source or destination in an NSG rule.
+* **Application security groups** allow you to group together the NICs from multiple VMs, and then use the group as the source or destination in an NSG rule (the NIC must be in the same VNet)
 
 
 * You can connect virtual networks to each other with **virtual network peering**
@@ -60,3 +67,9 @@
 
 * Azure Virtual Network peering lets you connect virtual networks in the same or different regions, so resources in both networks can communicate with each other.
 * When virtual networks are peered, you can configure Azure VPN Gateway in the peered virtual network as a transit point. A virtual network can have only one VPN gateway
+
+* To associate a virtual network to a private DNS zone, you add the virtual network to the zone by creating a virtual network link.
+
+* Links
+
+- [Networking concepts](https://learn.microsoft.com/en-us/azure/virtual-network/network-overview)
