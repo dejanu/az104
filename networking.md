@@ -34,17 +34,21 @@
     - Security rules in network security groups enable you to filter network traffic
     - Azure creates default security rules for traffic:  `DenyAllInbound` traffic and `AllowInternetOutbound` traffic. By default, inbound security rules allow traffic from any virtual machine to any other virtual machine WITHIN the virtual network
     - You can't remove the default security rules.
-    - You can override a default security rule by creating another security rule that has a higher Priority setting for your network security group.
+    - You can OVERRIDE a default security rule by creating another security rule that has a higher Priority setting for your network security group.
+    - You can assign an NSG to the subnet of the virtual network in the same region
 
 * Rules priority:
   - Priority = a number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority. Once traffic matches a rule, processing stops. `100 DENY all` doesn't matter what's after.
   - E.g. : The rule with priority 150 is processed before the rule with priority 200.
 
 
--> For INBOUND traffic, Azure first processes network security group security rules for any associated subnets and then any associated network interfaces ( SUBNETS-->NIC)
+-> For INBOUND traffic, Azure first processes network security group security rules for any associated subnets and then any associated network interfaces (SUBNETS-->NIC)
+
 <- For OUTBOUND traffic, the process is reversed. Azure first evaluates network security group security rules for any associated network interfaces followed by any associated subnets (NIC-->SUBNET)
 
-* DMZ (demilitarized zone) = subnet with a network security group
+* DMZ (demilitarized zone): subnet with a network security group
+
+* **Availability sets**: are logical groupings of VMs that reduce the chance of correlated failures bringing down related VMs at the same time.
 
 * Ports:
 
