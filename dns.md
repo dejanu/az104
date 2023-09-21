@@ -19,3 +19,5 @@ match is found the DNS server updates the local cache and resolves the request.
 ```
 
 ![dns](https://github.com/dejanu/az104/blob/main/src/dns.png)
+
+* TTL: Represents the "time-to-live" as a whole unit, where 1 is one second. This value indicates how long the A record lives in a DNS cache before it expires.
