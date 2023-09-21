@@ -3,6 +3,12 @@
 
 ![Region aozne](https://github.com/dejanu/az104/blob/main/src/regions_zone.PNG)
 
+Azure has datacenters all over the world filled with servers and disks. These datacenters are grouped into geographic **regions** like: `West US, North Europe, Southeast Asia`
+
+* VM flavours and usage:
+
+![VM](https://github.com/dejanu/az104/blob/main/src/vmsize.png)
+--
 
 * Azure virtual network (VNet):
   - Use virtual networks to provision and manage virtual private networks (VPNs) in Azure.
