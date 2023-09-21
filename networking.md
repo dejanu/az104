@@ -42,7 +42,7 @@ Azure has datacenters all over the world filled with servers and disks. These da
 
 * You can assign a network security group to a SUBNET or a NETWORK INTERFACE, and define security rules in the group to control network traffic.
     - Security rules in network security groups enable you to filter network traffic
-    - Azure creates default security rules for traffic:  `DenyAllInbound` traffic and `AllowInternetOutbound` traffic. By default, inbound security rules allow traffic from any virtual machine to any other virtual machine WITHIN the virtual network
+    - Azure creates default security rules for traffic:  `DenyAllInbound` traffic and `AllowInternetOutbound` traffic. By default, Outbound requests are allowed. Inbound traffic is allowed only from WITHIN the virtual network.
     - You can't remove the default security rules.
     - You can OVERRIDE a default security rule by creating another security rule that has a higher Priority setting for your network security group.
     - You can assign an NSG to the subnet of the virtual network in the same region
@@ -59,6 +59,11 @@ Azure has datacenters all over the world filled with servers and disks. These da
 * DMZ (demilitarized zone): subnet with a network security group
 
 * **Availability sets**: are logical groupings of VMs that reduce the chance of correlated failures bringing down related VMs at the same time.
+  - Each VM in an availability set is placed in one update domain and one fault domain.
+    - Fault domains define the group of virtual machines that share a common power source and network switch: by default up to **3 fault domains**
+    - Update domains groups of VMs and underlying physical hardware that can be rebooted at the same time: by default **5** up to **20 update domains**
+
+![fault domain](https://github.com/dejanu/az104/blob/main/src/fault_domain.PNG)
 
 * Ports:
 
