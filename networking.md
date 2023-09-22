@@ -5,9 +5,10 @@
 
 Azure has datacenters all over the world filled with servers and disks. These datacenters are grouped into geographic **regions** like: `West US, North Europe, Southeast Asia`
 
-* VM flavours and usage:
+* VM flavors and usage:
 
 ![VM](https://github.com/dejanu/az104/blob/main/src/vmsize.png)
+
 --
 
 * Azure virtual network (VNet):
@@ -38,7 +39,7 @@ Azure has datacenters all over the world filled with servers and disks. These da
 
 * To filter network traffic to and from Azure resources that are attached to a VNet [network security groups (NSG)](https://learn.microsoft.com/en-us/azure/security/fundamentals/network-overview) and network security group rules.
 
-* Network security groups contain security rules that filter network traffic by: IP address, Port, and Protocol
+* Network security groups contain security rules that filter network traffic by IP address, Port, and Protocol
 
 * You can assign a network security group to a SUBNET or a NETWORK INTERFACE, and define security rules in the group to control network traffic.
     - Security rules in network security groups enable you to filter network traffic
@@ -49,7 +50,7 @@ Azure has datacenters all over the world filled with servers and disks. These da
 
 * Rules priority:
   - Priority = a number between 100 and 4096. Rules are processed in priority order, with lower numbers processed before higher numbers, because lower numbers have higher priority. Once traffic matches a rule, processing stops. `100 DENY all` doesn't matter what's after.
-  - E.g. : The rule with priority 150 is processed before the rule with priority 200.
+  - E.g.: The rule with priority 150 is processed before the rule with priority 200.
 
 
 -> For INBOUND traffic, Azure first processes network security group security rules for any associated subnets and then any associated network interfaces (SUBNETS-->NIC)
@@ -60,8 +61,8 @@ Azure has datacenters all over the world filled with servers and disks. These da
 
 * **Availability sets**: are logical groupings of VMs that reduce the chance of correlated failures bringing down related VMs at the same time.
   - Each VM in an availability set is placed in one update domain and one fault domain.
-    - Fault domains define the group of virtual machines that share a common power source and network switch: by default up to **3 fault domains**
-    - Update domains groups of VMs and underlying physical hardware that can be rebooted at the same time: by default **5** up to **20 update domains**
+    - `Fault domains` define the group of virtual machines that share a common power source and network switch: by default up to **3 fault domains**
+    - `Update domains` groups of VMs and underlying physical hardware that can be rebooted at the same time: by default **5** up to **20 update domains**
 
 ![fault domain](https://github.com/dejanu/az104/blob/main/src/fault_domain.PNG)
 
@@ -78,6 +79,17 @@ Azure has datacenters all over the world filled with servers and disks. These da
 ```
 
 * **Application security groups** allow you to group together the NICs from multiple VMs, and then use the group as the source or destination in an NSG rule (the NIC must be in the same VNet)
+
+---
+
+* **Azure Network Watcher** - provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources on an Azure virtual network
+  - Network Watcher is a regional service that allows you to monitor and diagnose conditions at a network scenario level
+
+* **Azure Application Gateway** is a web traffic load balancer that enables you to manage traffic to your web applications. 
+  - Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
+
+---
+
 
 * You can connect virtual networks to each other with **virtual network peering**
 
