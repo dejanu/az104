@@ -83,7 +83,7 @@ Azure has datacenters all over the world filled with servers and disks. These da
 ---
 
 * **Azure Network Watcher** - provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources on an Azure virtual network
-  - Network Watcher is a regional service that allows you to monitor and diagnose conditions at a network scenario level
+  - Network Watcher is a REGIONAL service that allows you to monitor and diagnose conditions at a network scenario level, is enabled automatically in the virtual network's REGION
 
 * **Azure Application Gateway** is a web traffic load balancer that enables you to manage traffic to your web applications. 
   - Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
