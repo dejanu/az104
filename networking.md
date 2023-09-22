@@ -22,7 +22,7 @@ Azure has datacenters all over the world filled with servers and disks. These da
   
   - You can configure **user defined routes** and next hop targets (e.g. VNet, Network Virtual Appliance, Internet, None)
   - Traffic routed to the `none` next hop type is dropped and not routed outside the subnet.
-  - Valid next hop choices are: `virtual appliance, virtual network gateway, virtual network, internet, and none``
+  - Valid next hop choices are: `virtual appliance, virtual network gateway, virtual network, internet, and none`
 
 
 * **Network Interface** is the interconnection between a VM and a VNet.

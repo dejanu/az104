@@ -29,13 +29,6 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 
 ---
 
-* **Azure Resources Groups** - logical collections of virtual machines, storage accounts, virtual networks, web apps, databases, and/or database servers. Resource Groups are at their simplest a logical collection of resources, there are a few rules for resource groups:
-  - Resources can only exist in one Resource Groups.
-  - Resource Groups cannot be renamed.
-  - Resource Groups can have resources from many different regions.
-
-* **Azure Subscriptions** - authenticates and authorizes user to use resources, and a subscription is linked to an Azure account, which in turn is an identity in Azure Active Directory (AD)
-
 * **Azure Network Watcher** - provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources on an Azure virtual network
 
 * **Azure Application Gateway** is a web traffic load balancer that enables you to manage traffic to your web applications. 
@@ -58,6 +51,8 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
      - **Read-Only locks** which prevent any changes to the resource
      - **Delete locks**, which prevent deletion (can be applied on virtual machines, subscriptions, and resource groups)
 
+---
+
 * Azure role-based access control (RBAC):
   - Azure **AD roles** provide the mechanism for managing permissions to **AD resources** (e.g. user accounts and passwords)
 
@@ -70,11 +65,21 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
   
 * Azure AD supports three types of user accounts: Cloud identity (defined only in Azure AD),Directory-synchronized identity (defined in an on-premises Active Directory-synchronization activity occurs via Azure AD Connect to bring these user accounts in to Azure, Guest user (acounts outside of Azure)
 
+* **Tenant** - instance of Azure AD with a primary domain name
+  - What term defines a dedicated and trusted instance of Azure Active Directory? - **Azure AD tenant**
+  - Subscription will trust a particular Azure AD instance.
+
 * Active Directory Domain Services (AD DS) is the traditional deployment of Windows Server-based Active Directory on a physical or virtual server.
   - AD DS is primarily a directory service, while Azure AD is a full identity solution(is based on HTTP and HTTPS, it doesn't use Kerberos authentication.)
-  - What term defines a dedicated and trusted instance of Azure Active Directory? - **Azure AD tenant**
 
 * Which choice correctly describes Azure Active Directory? - Azure AD is primarily an identity solution. It's designed for internet-based applications by using HTTP and HTTPS communications.
+
+* **Azure Resources Groups** - logical collections of virtual machines, storage accounts, virtual networks, web apps, databases, and/or database servers. Resource Groups are at their simplest a logical collection of resources, there are a few rules for resource groups:
+  - Resources can only exist in one Resource Groups.
+  - Resource Groups cannot be renamed.
+  - Resource Groups can have resources from many different regions.
+
+* **Azure Subscriptions** - authenticates and authorizes user to use resources, and a subscription is linked to an Azure account, which in turn is an identity in Azure Active Directory (AD)
  
 * A **custom role definition** includes the operations allowed such as read, write, and delete for Azure resources, and the scope of those permissions
 
