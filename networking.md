@@ -85,6 +85,8 @@ Azure has datacenters all over the world filled with servers and disks. These da
 * **Azure Network Watcher** - provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources on an Azure virtual network
   - Network Watcher is a REGIONAL service that allows you to monitor and diagnose conditions at a network scenario level, is enabled automatically in the virtual network's REGION
 
+* **IP flow verify** can identify the specific network security group (NSG) that prevents communication
+
 * **Azure Application Gateway** is a web traffic load balancer that enables you to manage traffic to your web applications. 
   - Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
 
@@ -102,10 +104,11 @@ Azure has datacenters all over the world filled with servers and disks. These da
 
 --
 
+
 * To associate a VNet to a private DNS zone, you add the virtual network to the zone by creating a virtual **network link**.
 
 * **Azure Bastion** is a service that lets you connect to a virtual machine by using a browser, without exposing RDP and SSH ports
 
-* Links
+## Links:
 
 - [Networking concepts](https://learn.microsoft.com/en-us/azure/virtual-network/network-overview)
