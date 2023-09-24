@@ -82,7 +82,7 @@ Azure has datacenters all over the world filled with servers and disks. These da
 
 ---
 
-* **Azure Network Watcher** - provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources on an Azure virtual network
+* **Azure Network Watcher** - provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources on an Azure virtual network. Monitor network health of `VM, APP GATEWAY, LB``
   - Network Watcher is a REGIONAL service that allows you to monitor and diagnose conditions at a network scenario level, is enabled automatically in the virtual network's REGION
 
 * **IP flow verify** can identify the specific network security group (NSG) that prevents communication
