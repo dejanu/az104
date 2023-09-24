@@ -100,7 +100,10 @@ Azure has datacenters all over the world filled with servers and disks. These da
 --
 
 * Azure Virtual Network peering lets you connect virtual networks in the same or different regions, so resources in both networks can communicate with each other.
-* When virtual networks are peered, you can configure Azure VPN Gateway in the peered virtual network as a transit point. A virtual network can have only one VPN gateway 
+
+* A **VPN gateway** is a type of virtual network gateway that sends encrypted traffic between a virtual network and an on-premises location across a public connection
+  - When virtual networks are peered, you can configure Azure VPN Gateway in the peered virtual network as a transit point. 
+  - A VNet can have only one VPN gateway 
 
 --
 
