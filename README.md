@@ -46,7 +46,9 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 ---
 
 * Azure role-based access control (RBAC):
+  - A **Role** is a set of permissions
   - Azure **AD roles** provide the mechanism for managing permissions to **AD resources** (e.g. user accounts and passwords)
+  - Azure RBAC focuses on managing user actions at different scopes
 
 * Azure Active Directory (AD):  cloud-based identity and access management service
   - Azure AD provides secure single sign-on (SSO)
