@@ -79,9 +79,8 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 
 * Roles:
   - Reader: view all the resources but does not allow you to make any changes
-  - Contributor: allows you to manage all the resource
-  - Billing reader: read access only to billing data 
-  - Tag Contributor: manage entity tags without providing access to the entities themselves
+  - Contributor: allows you to create.update/modify resources
+  - Administrator/Owner: assign/enable stuff e.g policy
 
 ---
 
@@ -90,6 +89,8 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 * Management groups are containers that can be used to manage access, policy, and compliance across multiple Azure subscriptions.
 * Azure Storage accounts contain Azure Storage data objects, including blobs, file shares, queues, tables, and disks
 
+
+![hierarchy](https://github.com/dejanu/az104/blob/main/src/hierarchy.PNG)
 
 ---
 
