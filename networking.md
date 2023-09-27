@@ -34,6 +34,9 @@ Azure has datacenters all over the world filled with servers and disks. These da
 *  Azure VNets connect Azure resources (virtual machines, the Azure App Service Environment, AKS, and Azure Virtual Machine Scale Sets). You can use **service endpoints** to connect to other Azure resource types, such as Azure SQL databases and storage accounts.
 
 * Private endpoints: offer security access between Azure PaaS Services such as Storage, CosmosDB, SQL Database, and Azure-hosted services such as Virtual Machine on Azure backbone network.
+  - is private IP in the address space of the virtual network
+
+* Service endpoints: enables private IP addresses in the VNet to reach the endpoint of an Azure service without needing a public IP address on the VNet.
 
 * Virtual network endpoints extend the private address space in Azure
 
@@ -85,8 +88,12 @@ Azure has datacenters all over the world filled with servers and disks. These da
 * **Azure Network Watcher** - provides tools to monitor, diagnose, view metrics, and enable or disable logs for resources on an Azure virtual network. Monitor network health of `VM, APP GATEWAY, LB``
   - Network Watcher is a REGIONAL service that allows you to monitor and diagnose conditions at a network scenario level, is enabled automatically in the virtual network's REGION
   - NSG flow logs is a feature of Azure Network Watcher that allows you to log information about IP traffic flowing through an NSG.
+  - **Connection troubleshoot**  is a [feature](https://learn.microsoft.com/en-us/azure/network-watcher/connection-troubleshoot-overview) of Azure Network Watcher 
 
 * **IP flow verify** can identify the specific network security group (NSG) that prevents communication
+
+* **Network insights overview** -  [page](https://learn.microsoft.com/en-us/azure/network-watcher/network-insights-overview) provides an easy way to visualize the inventory of your networking resources, together with resource health and alerts.
+  - display detailed metrics and a visual representation of the network topology.
 
 * **Azure Application Gateway** is a web traffic load balancer that enables you to manage traffic to your web applications. 
   - Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
