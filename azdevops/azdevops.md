@@ -25,3 +25,32 @@
     - deployment groups
     - service connections
 
+---
+
+## Application Insights 
+
+* will tell you about any performance issues and exceptions, and help you find and diagnose the root causes.
+* Exceptions in your live web app are reported by Application Insights.
+* Azure **Application Insight**s** availability test and alert:
+    - URL ping test: a simple test that you can create in the Azure portal.
+    - Multi-step web test: a more advanced test that you can create in Visual Studio Enterprise and upload to the portal.
+    - Custom track availability: a test that you can create in code, using the Application Insights SDK.
+* Application Insights can monitor both Java and ASP.NET web applications and services, WCF services. They can be hosted on-premises, on VMs, or as Microsoft Azure websites.
+
+---
+
+## Logic Apps
+
+* Automate reports with Logic Apps
+
+----
+
+## Azure Log Analytics 
+
+* IT Service Management Connector (ITSM) connect Azure with the following ITSM tools: ServiceNow, System Center Service Manager, Provance, Cherwell
+
+---
+
+## Azure Monitor Logs
+
+* Azure Monitor Logs is based on Azure Data Explorer and uses the same **Kusto Query Language (KQL)**
