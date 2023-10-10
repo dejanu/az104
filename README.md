@@ -26,6 +26,9 @@ Azure portal/az cli/sdk ---> Azure Resource Manager --> VM/storage/DB
 -  Rerun ARM templates: If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created.
 - **Azure Bicep** is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources
   - Bicep templates are transpiled (converted) into JSON, and it provide a simpler syntax for writing templates.
+  - A module allows the Bicep files to be reused. 
+  - Scope is the target of a Bicep file. 
+  - A variable makes a Bicep file more robust and readable. 
 
 ---
 
