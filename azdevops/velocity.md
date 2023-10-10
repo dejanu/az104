@@ -13,4 +13,4 @@ From a planning mindset, being release-centric means that issues are divided int
 * Cumulative flow diagrams (CFD)
 
 
-![velocity](https://github.com/dejanu/az104/blob/main/src/velocity.png)
+![velocity](https://github.com/dejanu/az104/blob/main/src/velocitymetrics.PNG)
