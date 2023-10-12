@@ -6,10 +6,14 @@ From a planning mindset, being release-centric means that issues are divided int
 ```
 
 * Lead time: measures the total time elapsed from the creation of work items to their completion
+    * Lead Time is an example of a faster outcomes metric associated with an Azure DevOps project
+      
 * Cycle time: measures the time it takes for your team to complete work items once they begin actively working on them
+
 * Burndown charts: focus on remaining work within a specific time period.
 
-* Lead Time is an example of a faster outcomes metric associated with an Azure DevOps project
+* Mean time to recover is an example of a quality and security metric
+* Server to Admin Ratio and Application Performance are examples of efficiency metrics
 
 * Cumulative flow diagrams (CFD)
 
