@@ -5,7 +5,7 @@
 * Type of pipelines: **build** and **release**
     - When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
 
-* Caching is available YAML and classic build pipelines
+* Caching is available in YAML and classic build pipelines
 
 * In Azure DevOps, there are 4 types of jobs available:
     - **Agent pool jobs**: run on an agent that is part of an agent pool
@@ -35,7 +35,7 @@
 * will tell you about any performance issues and exceptions, and help you find and diagnose the root causes.
 * Exceptions in your live web app are reported by Application Insights.
 * Azure **Application Insight** availability test and alert:
-    - URL ping test: a simple test that you can create in the Azure portal.
+    - URL ping and Standard test: a simple test you can create in the Azure portal.
     - Multi-step web test: a more advanced test that you can create in Visual Studio Enterprise and upload to the portal.
     - Custom track availability: a test that you can create in code, using the Application Insights SDK.
 * Application Insights can monitor both Java and ASP.NET web applications and services, WCF services. They can be hosted on-premises, on VMs, or as Microsoft Azure websites.
@@ -58,7 +58,7 @@
 
 ## Azure Log Analytics 
 
-* IT Service Management Connector (ITSM) connect Azure with the following ITSM tools: ServiceNow, System Center Service Manager, Provance, Cherwell
+* IT Service Management Connector (ITSM) connects Azure with the following ITSM tools: ServiceNow, System Center Service Manager, Provance, Cherwell
 
 ---
 
