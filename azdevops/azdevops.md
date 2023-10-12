@@ -31,7 +31,7 @@
 
 * will tell you about any performance issues and exceptions, and help you find and diagnose the root causes.
 * Exceptions in your live web app are reported by Application Insights.
-* Azure **Application Insight**s** availability test and alert:
+* Azure **Application Insight** availability test and alert:
     - URL ping test: a simple test that you can create in the Azure portal.
     - Multi-step web test: a more advanced test that you can create in Visual Studio Enterprise and upload to the portal.
     - Custom track availability: a test that you can create in code, using the Application Insights SDK.
@@ -41,7 +41,9 @@
 
 ## Logic Apps
 
+* Service that allows to run automated workflows with little to no code
 * Automate reports with Logic Apps
+* Move uploaded files from an SFTP or FTP server to Azure Storage.
 
 ----
 
@@ -54,3 +56,5 @@
 ## Azure Monitor Logs
 
 * Azure Monitor Logs is based on Azure Data Explorer and uses the same **Kusto Query Language (KQL)**
+    - A Kusto query is a read-only request to process data and return results
+    - KQL is powerful tool to explore your data and discover patterns, identify anomalies and outliers, create statistical modeling, and more. The query uses schema entities that are organized in a hierarchy similar to SQLs: databases, tables, and columns.

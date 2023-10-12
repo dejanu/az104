@@ -7,7 +7,7 @@
 ## CI/CD
 
 * Continuous Integration - merging and testing of code, leading to an early finding of defects. Continuous integration should include an OSS vulnerability scans and static code analysis
-* Continuous Delivery - helps organizations quickly fix bugs and respond to ever-changing business requirements.
+* Continuous Delivery - helps organizations quickly fix bugs and respond to ever-changing business requirements. Continuous deployment should include passive penetration tests as well as SSL and infrastructure scan
 
 * KPI:
     - Deployment Frequency. Increasing the frequency of deployments is often a critical driver in DevOps Projects.
