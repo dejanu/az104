@@ -18,7 +18,7 @@
 
 * The agent always starts this communication (pull model). All the messages from the agent to Azure Pipelines over HTTPS, depending on how you configure the agent.
 * The agent downloads a listener OAuth token and uses it to listen to the job queue
-* The maximum duration of a build running on the Microsoft-hosted agent is s**6h**
+* The maximum duration of a build running on the Microsoft-hosted agent is  **6h**
 
 
 * Which two features are present in Azure Pipelines, but NOT in GitHub Actions?
@@ -36,6 +36,12 @@
     - Multi-step web test: a more advanced test that you can create in Visual Studio Enterprise and upload to the portal.
     - Custom track availability: a test that you can create in code, using the Application Insights SDK.
 * Application Insights can monitor both Java and ASP.NET web applications and services, WCF services. They can be hosted on-premises, on VMs, or as Microsoft Azure websites.
+* Application Insights provides direct integration with Azure Boards
+
+## Smart detection
+
+* Smart detection automatically warns you of potential performance problems and failure anomalies in your WEB application.
+* It performs proactive analysis of the telemetry that your app sends to **Application Insights**
 
 ---
 
