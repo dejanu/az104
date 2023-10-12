@@ -42,7 +42,14 @@
 
 * **Semantic versioning**  has the form of `Major.Minor.Patch`
   > Examples of versions using the semantic versioning scheme are `1.0.0` and `3.7.129`. These versions don't have any **labels**.
+
 * The **major** element represents the version of content that has changed significantly, which results in some degree of incompatibility with the previous major version.
+
 * The **minor** element represents the version of content that has been changed but not as significantly as the major version, making it more likely to be compatible with the previous minor version
+
 * The **patch** element represents a fix that preserves backward compatibility and can represent prereleases, such as alpha/beta.
-* The label element represents prereleases, such as alpha/beta
+    - The patch element is the only one that provides assurances of backward compatibility.
+
+* The **label** element represents prereleases, such as alpha/beta
+
+

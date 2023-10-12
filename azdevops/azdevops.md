@@ -7,7 +7,6 @@
 
 * Caching is available YAML and classic build pipelines
 
-
 * In Azure DevOps, there are 4 types of jobs available:
     - **Agent pool jobs**: run on an agent that is part of an agent pool
     - **Container jobs**: run in a container on an agent part of an agent pool
@@ -19,7 +18,11 @@
 * The agent always starts this communication (pull model). All the messages from the agent to Azure Pipelines over HTTPS, depending on how you configure the agent.
 * The agent downloads a listener OAuth token and uses it to listen to the job queue
 * The maximum duration of a build running on the Microsoft-hosted agent is  **6h**
+* Connect self-hosted agent pool to **Azure Pipelines**: A PAT is used to connect a self-hosted agent to Azure Pipelines
 
+* Azure DevOps project using a Git repository auth methods:
+    - SSH authentication is used when Git Credential Manager or personal access tokens PATs are not allowed
+    - OAuth is used for REST APIs only. Active Directory is used for on-premises deployments only.
 
 * Which two features are present in Azure Pipelines, but NOT in GitHub Actions?
     - deployment groups
