@@ -32,6 +32,10 @@
 
 ---
 
+* App Services include provisions for implementing staging environments and deploying apps (including .NET Core apps). 
+
+--- 
+
 ## Application Insights 
 
 * will tell you about any performance issues and exceptions, and help you find and diagnose the root causes.
