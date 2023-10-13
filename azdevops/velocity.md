@@ -16,6 +16,10 @@ From a planning mindset, being release-centric means that issues are divided int
 * Server to Admin Ratio and Application Performance are examples of efficiency metrics
 
 * Cumulative flow diagrams (CFD)
+   - monitor and count work items as they move to a different state.
+   - CFD charts can be used to monitor the flow of work: in-context report and CFD widget. 
+
+
 
 
 ![velocity](https://github.com/dejanu/az104/blob/main/src/velocitymetrics.PNG)
