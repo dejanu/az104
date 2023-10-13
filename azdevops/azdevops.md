@@ -5,6 +5,8 @@
 * Type of pipelines: **build** and **release**
     - When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
 
+* Environment represents a collection of resources targeted for deployment
+  
 * Caching is available in YAML and classic build pipelines
 
 * In Azure DevOps, there are 4 types of jobs available:
@@ -66,4 +68,6 @@
 
 * Azure Monitor Logs is based on Azure Data Explorer and uses the same **Kusto Query Language (KQL)**
     - A Kusto query is a read-only request to process data and return results
-    - KQL is powerful tool to explore your data and discover patterns, identify anomalies and outliers, create statistical modeling, and more. The query uses schema entities that are organized in a hierarchy similar to SQLs: databases, tables, and columns.
+    - KQL is a powerful tool to explore your data and discover patterns, identify anomalies and outliers, create statistical modeling, and more. The query uses schema entities that are organized in a hierarchy similar to SQLs: databases, tables, and columns.
+ 
+
