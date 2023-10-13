@@ -21,7 +21,9 @@
 * The agent downloads a listener OAuth token and uses it to listen to the job queue
 * The maximum duration of a build running on the Microsoft-hosted agent is  **6h**
 * Connect self-hosted agent pool to **Azure Pipelines**: A PAT is used to connect a self-hosted agent to Azure Pipelines
+* Only self-hosted agents support incremental builds.
 
+  
 * Azure DevOps project using a Git repository auth methods:
     - SSH authentication is used when Git Credential Manager or personal access tokens PATs are not allowed
     - OAuth is used for REST APIs only. Active Directory is used for on-premises deployments only.
