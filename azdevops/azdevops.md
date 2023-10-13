@@ -17,7 +17,7 @@
 
 ![agents](https://github.com/dejanu/az104/blob/main/src/agents.png)
 
-* The agent always starts this communication (pull model). All the messages from the agent to Azure Pipelines over HTTPS, depending on how you configure the agent.
+* The agent always starts this communication (pull model). All the messages from the agent to Azure Pipelines over HTTPS, depend on how you configure the agent.
 * The agent downloads a listener OAuth token and uses it to listen to the job queue
 * The maximum duration of a build running on the Microsoft-hosted agent is  **6h**
 * Connect self-hosted agent pool to **Azure Pipelines**: A PAT is used to connect a self-hosted agent to Azure Pipelines
@@ -34,7 +34,9 @@
 
 ---
 
-* App Services include provisions for implementing staging environments and deploying apps (including .NET Core apps). 
+* App Services include provisions for implementing staging environments and deploying apps (including .NET Core apps).
+
+    -  implement a staging environment and perform a blue-green deployment
 
 --- 
 
