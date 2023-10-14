@@ -1,6 +1,11 @@
-# Services
 
 ## Azure DevOps
+
+::: mermaid
+classDiagram
+    Pipeline <|-- Stage
+    class Stage
+:::
 
 * Type of pipelines: **build** and **release**
     - When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
