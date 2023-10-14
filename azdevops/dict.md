@@ -49,6 +49,7 @@
 
 * The **patch** element represents a fix that preserves backward compatibility and can represent prereleases, such as alpha/beta.
     - The patch element is the only one that provides assurances of backward compatibility.
+    - A patch or revision is used to indicate that a flaw, bug, or malfunctioning part of the component has been fixed.
 
 * The **label** element represents prereleases, such as alpha/beta
 
