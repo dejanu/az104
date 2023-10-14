@@ -1,11 +1,11 @@
 
-## Azure DevOps
+## Mermaid
 
-### Mermaid
+* Pipeline->Stage (build/test/deploy)->Job->Step(Script/Task)
 
 ```mermaid
  graph TD;
-      Pipeline-->Stage(build/test/deploy)-->Job-->Step(Script/Task);
+      Pipeline-->Stage-->Job-->Step;
 ```
 
 * Types and syntax:
@@ -24,14 +24,13 @@ classDiagram
     class Stage
 :::
 ```
+---
 
-### Azure pipelines
+## Azure pipelines
 
 * Type of pipelines: **build** and **release**
     - When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
 
-* Environment represents a collection of resources targeted for deployment
-  
 * Caching is available in YAML and classic build pipelines
 
 * In Azure DevOps, there are 4 types of jobs available:
@@ -45,13 +44,19 @@ classDiagram
 * The agent always starts this communication (pull model). All the messages from the agent to Azure Pipelines over HTTPS, depend on how you configure the agent.
 * The agent downloads a listener OAuth token and uses it to listen to the job queue
 * The maximum duration of a build running on the Microsoft-hosted agent is  **6h**
-* Connect self-hosted agent pool to **Azure Pipelines**: A PAT is used to connect a self-hosted agent to Azure Pipelines
-* Only self-hosted agents support incremental builds.
+
+### Agent types(Connect agents to **Azure Pipelines**)
+
+* **self-hosted** : A PAT is used to connect a self-hosted agent to Azure Pipelines
+    - Only self-hosted agents support incremental builds
+    - Github CodeSpace are self-hosted agents
 
   
 * Azure DevOps project using a Git repository auth methods:
     - SSH authentication is used when Git Credential Manager or personal access tokens PATs are not allowed
     - OAuth is used for REST APIs only. Active Directory is used for on-premises deployments only.
+
+* Environment represents a collection of resources targeted for deployment
 
 * Which two features are present in Azure Pipelines, but NOT in GitHub Actions?
     - deployment groups
