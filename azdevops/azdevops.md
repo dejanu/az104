@@ -5,12 +5,11 @@
 
 ```mermaid
  graph TD;
-      Pipeline-->Stage-->Job-->Step;
-
+      Pipeline-->Stage(build/test/deploy)-->Job-->Step(Script/Task);
 ```
 
 * Types and syntax:
-    - **graph** TD; - defines a graph
+    - **graph** TD - defines a graph
     - **Sequence** - defines a sequence diagram
     - **Gantt** - defines a gantt diagram
     - **ClassDiagram** - defines a class diagram
@@ -18,11 +17,15 @@
     - **Pie** - defines a pie diagram
     - **Flowchart** - defines a flow chart diagram
 
+```
 ::: mermaid
 classDiagram
     Pipeline <|-- Stage
     class Stage
 :::
+```
+
+### Azure pipelines
 
 * Type of pipelines: **build** and **release**
     - When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
