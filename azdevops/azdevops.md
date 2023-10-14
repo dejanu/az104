@@ -104,8 +104,24 @@ classDiagram
 
 ## Azure Monitor Logs
 
-* Azure Monitor Logs is based on Azure Data Explorer and uses the same **Kusto Query Language (KQL)**
+* Azure Monitor Logs is based on **Azure Data Explorer** and uses the same **Kusto Query Language (KQL)**
     - A Kusto query is a read-only request to process data and return results
     - KQL is a powerful tool to explore your data and discover patterns, identify anomalies and outliers, create statistical modeling, and more. The query uses schema entities that are organized in a hierarchy similar to SQLs: databases, tables, and columns.
+ 
+```bash
+# KQL operators
+
+# RENDER: display result as BarChart (tabular format)
+# PROJECT: specify COLUMNS to include from the result set
+# PROJECT AWAY: specify COLUMNS to exclude from the result set
+# SUMMARIZE: aggregates the result
+# REDUCE: groups string together
+# WHERE: filters subset of ROWS
+# TAKE: specify the NO OF ROWS to be returned
+```
+
+
+
+
  
 
