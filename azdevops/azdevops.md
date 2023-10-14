@@ -1,6 +1,23 @@
 
 ## Azure DevOps
 
+### Mermaid
+
+```mermaid
+ graph TD;
+      Pipeline-->Stage-->Job-->Step;
+
+```
+
+* Types and syntax:
+    - **graph** TD; - defines a graph
+    - **Sequence** - defines a sequence diagram
+    - **Gantt** - defines a gantt diagram
+    - **ClassDiagram** - defines a class diagram
+    - **StateDiagram** - defines a state diagram
+    - **Pie** - defines a pie diagram
+    - **Flowchart** - defines a flow chart diagram
+
 ::: mermaid
 classDiagram
     Pipeline <|-- Stage
