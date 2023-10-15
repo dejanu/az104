@@ -1,7 +1,7 @@
 
 ## Mermaid
 
-* Pipeline->Stage (build/test/deploy)->Job->Step(Script/Task)
+* Pipeline->Stage (build/test/deploy)->Job->Step(Script/Task) . More [here](https://learn.microsoft.com/en-us/training/modules/integrate-azure-pipelines/3-understand-pipeline-structure)
 
 ```mermaid
  graph TD;
