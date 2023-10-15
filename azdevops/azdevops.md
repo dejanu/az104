@@ -40,7 +40,7 @@ classDiagram
     - **Agent pool jobs**: run on an agent that is part of an agent pool
     - **Container jobs**: run in a container on an agent part of an agent pool
     - **Deployment group jobs**:  run on systems in a deployment group
-    - **Agentless jobs**: run directly on the Azure DevOps also-often-called **Server Jobs**
+    - **Agentless jobs**: run directly on the Azure DevOps also-often-called **SERVERLESS JOBS**
 
 ![agents](https://github.com/dejanu/az104/blob/main/src/agents.png)
 
