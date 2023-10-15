@@ -15,7 +15,7 @@ From a planning mindset, being release-centric means that issues are divided int
 * Mean time to recover is an example of a quality and security metric
 * Server to Admin Ratio and Application Performance are examples of efficiency metrics
 
-* Cumulative flow diagrams (CFD)
+* Cumulative flow diagrams ([CFD](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cumulative-flow?view=azure-devops))
    - monitor and count work items as they move to a different state.
    - CFD charts can be used to monitor the flow of work: in-context report and CFD widget. 
 
