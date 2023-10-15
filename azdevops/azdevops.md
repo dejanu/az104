@@ -30,8 +30,8 @@ classDiagram
 
 * Type of pipelines: **build** and **release**
     - When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
-
-* Caching is available in YAML and classic build pipelines
+    - CACHING is available in YAML and classic build pipelines
+    - classic build and classic release supports task groups
 
 * In Azure DevOps, there are 4 types of jobs available:
     - **Agent pool jobs**: run on an agent that is part of an agent pool
@@ -47,10 +47,12 @@ classDiagram
 
 ### Agent types(Connect agents to **Azure Pipelines**)
 
-* **self-hosted** : A PAT is used to connect a self-hosted agent to Azure Pipelines
+* **self-hosted**: A PAT is used to connect a self-hosted agent to Azure Pipelines
     - Only self-hosted agents support incremental builds
     - Github CodeSpace are self-hosted agents
 
+* **cloud-agent**:
+    - each time you run a pipeline a new VM is provisioned
   
 * Azure DevOps project using a Git repository auth methods:
     - SSH authentication is used when Git Credential Manager or personal access tokens PATs are not allowed
