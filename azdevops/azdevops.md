@@ -31,7 +31,7 @@ classDiagram
 * Type of pipelines: **build** and **release**
     - When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
     - CACHING is available in YAML and classic build pipelines
-    - classic build and classic release supports task groups
+    - classic build and classic release support task groups
 
 * In Azure DevOps, there are 4 types of jobs available:
     - **Agent pool jobs**: run on an agent that is part of an agent pool
@@ -62,7 +62,7 @@ classDiagram
 
 ## GitHub Actions:
 
-* Are an alternative to Azure Pipelines
+* Are an alternative to Azure Pipelines, GitHub Action workflow for CI/CD.
 
 * Which two features are present in Azure Pipelines, but NOT in GitHub Actions?
     - deployment groups
