@@ -60,9 +60,14 @@ classDiagram
 
 * Environment represents a collection of resources targeted for deployment
 
+## GitHub Actions:
+
+* Are an alternative to Azure Pipelines
+
 * Which two features are present in Azure Pipelines, but NOT in GitHub Actions?
     - deployment groups
     - service connections
+  
 
 ---
 
