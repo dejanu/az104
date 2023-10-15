@@ -28,6 +28,9 @@ classDiagram
 
 ## Azure pipelines
 
+* Azure Pipelines to deploy your code to multiple targets
+    - Environment represents a collection of resources targeted for deployment: container registries, VMs etc.
+      
 * Type of pipelines: **build** and **release**
     - When creating a build or release pipeline, you can specify which pool it uses, organization, or project scope.
     - CACHING is available in YAML and classic build pipelines
@@ -58,7 +61,6 @@ classDiagram
     - SSH authentication is used when Git Credential Manager or personal access tokens PATs are not allowed
     - OAuth is used for REST APIs only. Active Directory is used for on-premises deployments only.
 
-* Environment represents a collection of resources targeted for deployment
 
 ## GitHub Actions:
 
