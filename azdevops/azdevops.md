@@ -73,9 +73,20 @@ classDiagram
 
 ---
 
-* App Services include provisions for implementing staging environments and deploying apps (including .NET Core apps).
+## App Services
 
-    -  implement a staging environment and perform a blue-green deployment
+*  include provisions for implementing staging environments and deploying apps (including .NET Core apps).
+* implement a staging environment and perform a blue-green deployment
+
+```bash
+
+# instrumentation key to APP INSIGHTS
+# access key to AZ STORAGE
+```
+
+## APP Config
+
+* eazy feature flag
 
 --- 
 
