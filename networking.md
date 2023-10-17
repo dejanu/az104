@@ -1,13 +1,13 @@
 # Networking
 
 
-![Region aozne](https://github.com/dejanu/az104/blob/main/src/regions_zone.PNG)
+![Region aozne](https://github.com/dejanu/az_104400/blob/main/src/regions_zone.PNG)
 
 Azure has datacenters all over the world filled with servers and disks. These datacenters are grouped into geographic **regions** like: `West US, North Europe, Southeast Asia`
 
 * VM flavors and usage:
 
-![VM](https://github.com/dejanu/az104/blob/main/src/vmsize.png)
+![VM](https://github.com/dejanu/az_104400/blob/main/src/vmsize.png)
 
 --
 
