@@ -13,12 +13,33 @@ From a planning mindset, being release-centric means that issues are divided int
 * Burndown charts: focus on remaining work within a specific time period.
     * Burndown chart for a single iteration == Sprint burndown
 
-* Mean time to recover is an example of a quality and security metric
-* Server to Admin Ratio and Application Performance are examples of efficiency metrics
-
 * Cumulative flow diagrams ([CFD](https://learn.microsoft.com/en-us/azure/devops/report/dashboards/cumulative-flow?view=azure-devops))
    - monitor and count work items as they move to a different state.
    - CFD charts can be used to monitor the flow of work: in-context report and CFD widget.
    - most important CFD shows **botllenecks** in your process
 
 ![velocity](https://github.com/dejanu/az104/blob/main/src/velocitymetrics.PNG)
+
+---
+
+## Metrics
+
+* Quality and security
+    - Mean time to recover (MTTR)
+    - SLA
+    - Defect escape rate
+
+* Performance and Efficiency metrics
+    - Application performance index (Apdex)
+    - Server to Admin ratio
+    - Staff member to customer ratio
+
+* Faster outcomes metrics
+    - Lead time
+    - Cycle time
+    - Burndown charts
+    - Cumulative flow diagrams (CFD)
+
+
+
+
