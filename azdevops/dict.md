@@ -49,9 +49,9 @@
 * The **minor** element represents the version of content that has been changed but not as significantly as the major version, making it more likely to be compatible with the previous minor version
 
 * The **patch** element represents a fix that preserves backward compatibility and can represent prereleases, such as alpha/beta.
-    - The patch element is the only one that provides assurances of backward compatibility.
+    - The patch element is the only one that assures backward compatibility.
     - A patch or revision is used to indicate that a flaw, bug, or malfunctioning part of the component has been fixed.
 
-* The **label** element represents prereleases, such as alpha/beta
+* The **label** element represents prereleases, such as alpha/beta: `1.0.0-rc1 (release candidate)'
 
 
