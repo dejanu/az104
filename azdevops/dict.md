@@ -41,7 +41,7 @@
 
 ## Versioning 101
 
-* **Semantic versioning**  has the form of `Major.Minor.Patch`
+* **Semantic versioning**  has the form of `Major.Minor.Patch` aka [semver](https://semver.org/)
   > Examples of versions using the semantic versioning scheme are `1.0.0` and `3.7.129`. These versions don't have any **labels**.
 
 * The **major** element represents the version of content that has changed significantly, which results in some degree of incompatibility with the previous major version.
