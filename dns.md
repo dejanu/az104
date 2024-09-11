@@ -7,7 +7,7 @@
 ## Flow for lookup request
 
 1) check if the domain name is stored in the short-term cache.
-2) if the domain is not in the short-term cache, it contect one or more DNS servers on the internet so see if theu have a match, when a 
+2) if the domain is not in the short-term cache, it contacts one or more DNS servers on the internet so see if theu have a match, when a 
 match is found the DNS server updates the local cache and resolves the request.
 3) if the domain is not found after a no. of DNS check, the DNS server responds with a `domain cannot be found`
 

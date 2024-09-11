@@ -5,7 +5,7 @@
 
 Azure has datacenters all over the world filled with servers and disks. These datacenters are grouped into geographic **regions** like: `West US, North Europe, Southeast Asia`
 
-* VM flavors and usage:
+* VM flavors and usage and [families](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/)
 
 ![VM](https://github.com/dejanu/az_104400/blob/main/src/vmsize.png)
 
